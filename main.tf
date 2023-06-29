@@ -6,7 +6,7 @@ resource "random_id" "bucket_prefix" {
 }
 
 resource "google_storage_bucket" "default" {
-  name                        = "de${var.function_name}-gcf-source" # Every bucket name must be globally unique
+  name                        = "betika-deployments-source/${var.function_name}-gcf-source" # Every bucket name must be globally unique
   location                    = var.location
   uniform_bucket_level_access = true
   project                     = var.project_id
