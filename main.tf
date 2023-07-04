@@ -21,7 +21,7 @@ resource "google_storage_bucket_object" "default" {
 
 
 output "bucket_name" {
-  value       = "betika-deployments-source"
+  value       = var.bucket_name
   description = "The name of the Google Cloud Storage bucket."
 }
 
