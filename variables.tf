@@ -3,7 +3,10 @@ variable "location" {
   type        = string
 }
 
-variable "bucket_name" {}
+variable "bucket_name" {
+  default = "betika-deployments-source"
+  type = string
+}
 variable "source_code" {}
 variable "function_name" {}
 

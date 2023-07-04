@@ -15,7 +15,7 @@ resource "random_id" "bucket_prefix" {
 
 resource "google_storage_bucket_object" "default" {
   name   = "${var.function_name}-gcf-source/function-source.zip"
-  bucket = "betika-deployments-source"
+  bucket = var.bucket_name
   source = var.output_location
 }
 
