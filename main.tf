@@ -1,5 +1,4 @@
 variable "project_id" {}
-variable "bucket_prefix_length" {}
 
 resource "random_id" "bucket_prefix" {
   byte_length = var.bucket_prefix_length

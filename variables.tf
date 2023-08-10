@@ -5,7 +5,7 @@ variable "location" {
 
 variable "bucket_name" {
   default = "betika-deployments-source"
-  type = string
+  type    = string
 }
 variable "source_code" {}
 variable "function_name" {}
@@ -13,4 +13,9 @@ variable "function_name" {}
 variable "output_location" {
   description = "The directory containing the function output location."
   type        = string
+}
+
+
+variable "bucket_prefix_length" {
+  default = 10
 }
