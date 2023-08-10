@@ -4,6 +4,7 @@ resource "random_id" "bucket_prefix" {
   byte_length = var.bucket_prefix_length
 }
 
+resource "random_uuid" "my_uuid" { }
 
 
 /*resource "google_storage_bucket" "default" {
@@ -15,7 +16,7 @@ resource "random_id" "bucket_prefix" {
 
 
 resource "google_storage_bucket_object" "default" {
-  name   = "${var.function_name}-gcf-source/function-source-${random_id.bucket_prefix.hex}.zip"
+  name   = "${var.function_name}-gcf-source/function-source-${random_uuid.my_uuid.result}.zip"
   bucket = var.bucket_name
   source = var.output_location
 }
