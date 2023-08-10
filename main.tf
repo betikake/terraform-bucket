@@ -4,6 +4,8 @@ resource "random_id" "bucket_prefix" {
   byte_length = var.bucket_prefix_length
 }
 
+
+
 /*resource "google_storage_bucket" "default" {
   name                        = "betika-deployments-source/${var.function_name}-gcf-source" # Every bucket name must be globally unique
   location                    = var.location
