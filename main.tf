@@ -16,7 +16,7 @@ resource "google_storage_bucket_object" "default" {
 }
 
 output "object_value" {
-  value = default
+  value = google_storage_bucket_object.default
 }
 
 output "bucket_name" {
