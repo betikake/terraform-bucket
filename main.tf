@@ -15,7 +15,7 @@ resource "google_storage_bucket_object" "default" {
   source = var.output_location
 }
 
-output "object" {
+output "object_value" {
   value = default
 }
 
