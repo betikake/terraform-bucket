@@ -14,8 +14,3 @@ variable "output_location" {
   description = "The directory containing the function output location."
   type        = string
 }
-
-
-variable "bucket_prefix_length" {
-  default = 10
-}
