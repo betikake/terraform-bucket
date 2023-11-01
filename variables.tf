@@ -3,8 +3,8 @@ variable "location" {
   type        = string
 }
 
-variable "project_id" {
-  
+variable "output_sha" {
+
 }
 
 variable "bucket_name" {
