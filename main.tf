@@ -10,7 +10,7 @@ resource "random_uuid" "my_uuid" { }
 
 
 resource "google_storage_bucket_object" "default" {
-  name   = "${var.function_name}-gcf-source/function-source.zip"
+  name   = "${var.function_name}-gcf-source/function-source-${var.output_sha}.zip"
   bucket = var.bucket_name
   source = var.output_location
 }
